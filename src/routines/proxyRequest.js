@@ -128,6 +128,7 @@ const proxyRequest = async (proxyRequestConfiguration: ProxyRequestConfiguration
   let response;
 
   try {
+    console.log('ssssssssssssssssssssssssssss', headers)
     response = await got(request.url(), {
       agent,
       body: request.postData(),
